@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" >
+<style type='text/css'>
+    *{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+   background-image: url('https://media-exp1.licdn.com/dms/image/C511BAQHgKtftzO34CA/company-background_10000/0/1582269725600?e=2159024400&v=beta&t=G9T29odiZGewlXhj2qnHHJjDrpkuI9Kd4lqYuqSpmvA');
+   background-size: cover;
+
+  font-family: roboto;
+  user-select: none;
+}
+
+.container{
+  width: 450px;
+  margin: 30px auto;
+}
+
+.signup,
+.login{
+  width: 50%;
+  background: #fff;
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.signup-form,
+.login-form{
+  background: #fff;
+  padding: 40px;
+  clear: both;
+  width: 100%;
+  box-sizing: border-box;
+  height: 400px;
+}
+.input{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  color: #3e3e40;
+  font-size: 14px;
+  outline: none;
+  transform: all 0.5s ease;
+}
+
+.input:focus{
+  border: 2px solid #34b3a0;
+}
+.btn{
+  width: 100%;
+  background: #34b3a0;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+
+
+
+span a{
+  text-decoration: none;
+  color: #000;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #3e3e40;
+  font-family: roboto;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #3e3e40;
+  font-family: roboto;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #3e3e40;
+  font-family: roboto;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #3e3e40;
+  font-family: roboto;
+}
+
+
+</style>
+<head>
+  <meta charset="UTF-8">
+  <title>User Authentication System </title>
+
+
+</head>
+<body>
+<div class='mt-3 text-center'>
+        <h1 style="width: auto;margin: auto;text-align: center;color: black;padding: 11px;font-size: 44px;">User Authentication System</h1>
+    </div>
+
+<div class="wrapper">
+    <div class="container">
+
+
+      <div class="signup">Sign Up</div>
+      <div class="login">Log In</div>
+
+
+       <div class="signup-form">
+           <form action='/add' method="POST" >
+                <input type="text" id="newusername" name='newusername' placeholder="Username" style="width: 100%;padding: 20px;box-sizing: border-box;margin-bottom: 25px;border: 2px solid #e9eaea;color: #3e3e40;font-size: 14px;outline: none;transform: all 0.5s ease;" required><br>
+                <input type="text" id="newusereid" name='newuserid' placeholder="userID" style="width: 100%;padding: 20px;box-sizing: border-box;margin-bottom: 25px;border: 2px solid #e9eaea;color: #3e3e40;font-size: 14px;outline: none;transform: all 0.5s ease;" required><br>
+                <button style="width: 100%;background: #34b3a0;height: 60px;text-align: center;  line-height: 60px;text-transform: uppercase;color: #fff;font-weight: bold;letter-spacing: 1px;cursor: pointer;margin-bottom: 30px;" type='submit' class='btn'>Create Account
+                </button>
+           </form>
+       </div>
+      
+      <div class="login-form">
+           <a style="text-decoration: none;max-width: 300px;" href="/start">
+          <div class="btn">Face Scan</div>
+           </a>
+          <a style="text-decoration: none;max-width: 300px;" href="/start1">
+              <div class="btn" >BarCode Scan</div>
+
+          </a>
+
+
+
+    </div>
+      
+    </div>
+  </div>
+
+
+
+</body>
+</html>
