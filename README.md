@@ -1,3 +1,4 @@
+# ABOUT THE PROJECT
 The proposed system is a user authentication system in which will use Face authentication and QR code authorization for logging in. 
 It will enhance the security of the system. The aim of this user authentication system is to verify the identity of users accessing an application or system, ensuring that only authorized users are granted access while preventing unauthorized access to sensitive data and resources.It is be robust, reliable, and easy to use to ensure the security and integrity of modern applications and systems.
 This User authentication system can help prevent various types of attacks, such as
